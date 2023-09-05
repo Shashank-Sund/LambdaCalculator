@@ -35,5 +35,5 @@ def lambda_handler(event, context):
     # return result
     return {
         'statusCode': 200,
-        'body': json.dumps("Your expression {}={} has been saved successfully!".format(expression, result))
+        'body': json.dumps("Your expression {}={} has been saved to the database!".format(expression, result))
     }
