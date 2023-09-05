@@ -43,9 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         xhr.send(JSON.stringify(characters));
     });
     
-    // SAVE button logic (FIXME: POST request is failing at network level. 
-    // API gateway works in backend, script is not able to send a request and persist
-    // data to dynamodb )
+    // SAVE button logic
     saveButton.addEventListener("click", function(event) {
         event.preventDefault(); // Prevent the default form submission behavior
 
@@ -54,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const characters = {"equation": charactersInput.value};
 
         // Define the API endpoint
-        const url = 'https://3jogrytmgj.execute-api.us-east-1.amazonaws.com/Prod2'; // Replace with your actual API endpoint
+        const url = 'https://3jogrytmgj.execute-api.us-east-1.amazonaws.com/Prod'; // Replace with your actual API endpoint
 
         // Create a new XMLHttpRequest object
         const xhr2 = new XMLHttpRequest();
@@ -68,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         xhr2.onreadystatechange = function() {
             if (xhr2.readyState == 4 && xhr2.status === 200) {
                 const response = JSON.parse(xhr2.responseText);
-                responseDiv.textContent = `it worked.`;
+                responseDiv.textContent = `${response.body}`;
             } else {
                 console.error('Request failed with status:', xhr2.status);
                 responseDiv.textContent = 'An error occurred while sending the request: ' + xhr2.status;
