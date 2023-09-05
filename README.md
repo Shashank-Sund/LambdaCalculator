@@ -5,3 +5,5 @@ This app is a simple calculator app hosted on AWS. The webpages are stored in a 
 # Feature - Solve Function
 
 The solve function uses an API Gateway url to send a synchronous post request with an expression string for the backend lambda to solve. CORS headers are enabled for Cross-Origin referencing on the API url. The Lambda function is envoked through the API url request, and executes functionality for the calculator solve function. The response is returned with code 200.
+
+AWS Tools used: CloudFront, S3, IAM, API Gateway, Lambda
