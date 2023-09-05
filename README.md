@@ -4,7 +4,7 @@ This app is a simple calculator app hosted on AWS. The webpages are stored in a 
 
 # Architecture
 
-
+![LambdaCalculatorArchitecture](https://github.com/Shashank-Sund/LambdaCalculator/assets/29733360/eeec7308-cb5d-46a8-b9ef-b1554402b0d5)
 
 # Feature - Solve Function
 
