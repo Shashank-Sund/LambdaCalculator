@@ -14,7 +14,7 @@ The solve function uses an API Gateway url to send a synchronous post request wi
 
 AWS Tools used: CloudFront, S3, API Gateway, Lambda
 
-# Feature - Save Function (Incomplete)
+# Feature - Save Function
 
 The save function uses an API Gateway url to send a synchronous post request with an expression string for a backend lambda to solve and save to a dynamodb database. CORS headers are enabled for Cross-Origin referencing on the API url. The IAM role in which the lambda is using has been modified to allow certain actions on the existing dynamodb. The Lambda function is envoked through the API url request, and executes functionality for the calculator save function. The response is returned with code 200.
 
