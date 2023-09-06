@@ -2,11 +2,11 @@
 
 This app is a simple calculator app hosted on AWS. The webpages are stored in a private S3 bucket and web pages are served through a CloudFront Distribution. Caching is used in the CloudFront distribution for a faster user experience and for users to access webpages quicker. The web content can only be accessed publicy through the CloudFront distribution as defined in the bucket policy.
 
-Website: https://d36uggls54bsv0.cloudfront.net
+Website: https://shaislambdacalculator.com/
 
 # Architecture
 
-![LambdaCalculatorArchitecture](https://github.com/Shashank-Sund/LambdaCalculator/assets/29733360/eeec7308-cb5d-46a8-b9ef-b1554402b0d5)
+![AWS](https://github.com/Shashank-Sund/LambdaCalculator/assets/29733360/f6fe6b17-f39b-4060-aa45-6b59ab829be0)
 
 # Feature - Solve Function
 
